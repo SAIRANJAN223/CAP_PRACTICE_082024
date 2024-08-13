@@ -1,2 +1,22 @@
 ###
-GET http://localhost:4004/odata/v4/school-service
+GET http://localhost:4004/odata/v4/school-service/Student
+
+###
+POST http://localhost:4004/odata/v4/school-service/Student
+Content-Type: application/json
+
+{
+    "student_id":"10004",
+    "student_name":"Pranesh"
+}
+
+###
+PATCH http://localhost:4004/odata/v4/school-service/Student(student_id='10004')
+Content-Type: application/json
+
+{
+    "student_name": "Pranesh Raja"
+}
+
+###
+DELETE http://localhost:4004/odata/v4/school-service/Student(student_id='10004')
