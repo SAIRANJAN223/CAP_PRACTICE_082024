@@ -1,0 +1,23 @@
+###
+GET http://localhost:4000/oData/v4/school-service/Student
+
+###
+Post http://localhost:4000/oData/v4/school-service/Student
+Content-Type: application/json
+
+{
+    "student_id":"10004",
+    "student_name":"Pranesh"
+}
+
+
+###
+Patch http://localhost:4000/oData/v4/school-service/Student(student_id='10004')
+Content-Type: application/json
+
+{
+    "student_name":"Pranesh Raja"
+}
+
+###
+Patch http://localhost:4000/oData/v4/school-service/Student(student_id='10004')
