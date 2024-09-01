@@ -1,0 +1,15 @@
+###
+POST http://localhost:4004/odata/v4/emp-service/EmpAtt
+Content-Type: application/json
+
+{
+    "emp_id":"MM0661",
+    "date":"2025-08-26T10:00:00.000Z",
+    "entry_type":"IN"
+}
+
+###
+GET http://localhost:4004/odata/v4/emp-service/EmpAtt
+
+###
+GET http://localhost:4004/odata/v4/emp-service/LunCnt
